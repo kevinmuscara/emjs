@@ -1,0 +1,34 @@
+{
+  "name": "emjs",
+  "version": "0.0.1",
+  "description": "ECMAScript HTTP server with ejs support",
+  "scripts": {
+    "build": "node --experimental-modules src/run-build.mjs www",
+    "start": "node --experimental-modules src/run-server.mjs",
+    "test": "node --experimental-modules src/run-tests.mjs"
+  },
+  "engines": {
+    "node": ">=14.14.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinmuscara/emjs.git"
+  },
+  "keywords": [],
+  "author": "Kevin Muscara",
+  "license": "GNU",
+  "bugs": {
+    "url": "https://github.com/kevinmuscara/emjs/issues"
+  },
+  "homepage": "https://github.com/kevinmuscara/emjs#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "esbuild": "^0.14.49",
+    "mime": "^3.0.0",
+    "test-runner": "./tools/test-runner/"
+  },
+  "devDependencies": {
+    "axios": "^0.27.2",
+    "colors": "^1.4.0"
+  }
+}
