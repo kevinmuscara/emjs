@@ -15,7 +15,7 @@ function main(projectDirectory) {
 
   jasmine.clearReporters();
   jasmine.addReporter(new BasicReporter());
-  let { fileName, testNames } = parseCommandLineOptions();
+  let { fileNames, testNames } = parseCommandLineOptions();
   jasmine.execute(fileNames, testNames);
 }
 
